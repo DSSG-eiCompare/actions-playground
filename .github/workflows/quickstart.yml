@@ -13,7 +13,14 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@master
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+        with:
+           r-version: '4.0'
+      - name: Report R Version 
+        run: |
+          which R
+          R --version
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
