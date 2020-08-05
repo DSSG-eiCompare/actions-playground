@@ -14,7 +14,7 @@ RoxygenNote: 6.1.1
 Depends:
     stringi
 Suggests: 
-    testthat (>= 2.1.0)
+    testthat (>= 2.1.0),
     knitr
 Imports: 
     forcats
