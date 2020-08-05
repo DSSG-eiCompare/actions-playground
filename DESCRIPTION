@@ -15,7 +15,10 @@ Depends:
     stringi
 Suggests: 
     testthat (>= 2.1.0)
+    knitr
 Imports: 
     forcats
 URL: https://github.com/jennybc/foofactors
 BugReports: https://github.com/jennybc/foofactors/issues
+NeedsCompilation: no
+VignetteBuilder: knitr
