@@ -16,4 +16,5 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(stringi)
+stringi::stri_length(c('abc', '123', '\u0105\u0104'))
 ```
